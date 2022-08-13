@@ -1,0 +1,11 @@
+
+#!/bin/sh
+# vim: set ft=sh sw=2 et :
+
+setup_zinit() {
+  bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+}
+
+system_type=$(uname -s)
+
+setup_zinit
