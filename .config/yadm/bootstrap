@@ -10,17 +10,6 @@ setup_zinit() {
     bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
   fi
 }
-
-setup_tmux() {
-  if [ -d "${HOME}/.tmux/plugins/tpm" ] 
-  then
-    echo "TPM already exists, skipping"
-  else
-    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-  fi
-}
-
 system_type=$(uname -s)
 
 setup_zinit
-setup_tmux

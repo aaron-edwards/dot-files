@@ -79,6 +79,6 @@ alias ll="ls -la"
 EDITOR=nvim
 
 eval `dircolors ~/.dircolors.ansi-universal`
-source /usr/share/nvm/init-nvm.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+### End of Zinit's installer chunk
